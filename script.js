@@ -13,3 +13,11 @@ function input(num){
 function clearNumb(){
     document.getElementById("display-numb").value = "";
 }
+
+function deleteNumb(){
+    var numb = document.getElementById("display-numb").value;
+    var numFloat = parseFloat(numb);
+    numFloat = numFloat/10;
+    var newNumb = parseInt(numFloat);
+    document.getElementById("display-numb").value = newNumb;
+}
