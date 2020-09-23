@@ -9,3 +9,7 @@ function input(num){
     var currentNum = disNum + num;
     document.getElementById("display-numb").value = currentNum;
 }
+
+function clearNumb(){
+    document.getElementById("display-numb").value = "";
+}
