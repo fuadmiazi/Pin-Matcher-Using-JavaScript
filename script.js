@@ -27,8 +27,14 @@ function submitBtn(){
     var tempo = compareNumb/inputNumb;
     if(tempo == 1){
         document.getElementById("pass-matched").style.display = "block";
+        document.getElementById("pass-wrong").style.display = "none";
+        document.getElementById("try-left").innerHTML = 3;
     }
     else{
         document.getElementById("pass-wrong").style.display = "block";
+        document.getElementById("pass-matched").style.display = "none";
+        var tryNum = document.getElementById("try-left").innerHTML;
+        var newTry = tryNum-1;
+        document.getElementById("try-left").innerHTML=newTry;
     }
 }
