@@ -36,5 +36,10 @@ function submitBtn(){
         var tryNum = document.getElementById("try-left").innerHTML;
         var newTry = tryNum-1;
         document.getElementById("try-left").innerHTML=newTry;
+        var tryLeft = document.getElementById("try-left").innerHTML;
+        if(tryLeft == 0){
+            document.getElementById("submit-button").style.display = "none";
+            document.getElementById("try-left").innerHTML = 0;
+        }
     }
 }
