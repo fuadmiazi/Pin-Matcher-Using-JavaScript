@@ -19,6 +19,10 @@ function deleteNumb(){
     numFloat = numFloat/10;
     var newNumb = parseInt(numFloat);
     document.getElementById("display-numb").value = newNumb;
+    var remZero = document.getElementById("display-numb").value;
+    if(remZero==0 || remZero == "NaN"){
+        document.getElementById("display-numb").value = "";
+    }
 }
 
 function submitBtn(){
